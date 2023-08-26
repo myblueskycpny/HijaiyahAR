@@ -65,4 +65,5 @@ public class MultipleImagesTrackingManager : MonoBehaviour
             _arObjects[trackedImage.referenceImage.name].transform.position = trackedImage.transform.position;
         }
     }
+    
 }

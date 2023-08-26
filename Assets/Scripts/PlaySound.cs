@@ -7,10 +7,10 @@ public class PlaySound : MonoBehaviour
     private AudioSource sounds;
     private void Start()
     {
-        sounds= GetComponent<AudioSource>();
+        
     }
     public void Play()
     {
-        sounds.Play();
+        
     }
 }
