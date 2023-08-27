@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlaySound : MonoBehaviour
 {
-    private AudioSource sounds;
+    public AudioSource[] sounds;
     private void Start()
     {
-        
+        sounds = new AudioSource[2];
     }
     public void Play()
     {
