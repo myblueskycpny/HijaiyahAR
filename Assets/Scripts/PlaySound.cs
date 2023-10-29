@@ -1,16 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlaySound : MonoBehaviour
+public class FindEnabledAudioSources : MonoBehaviour
 {
-    public AudioSource[] sounds;
-    private void Start()
+    public AudioSource[] enabledAudioSources;
+
+    void Start()
     {
-        sounds = new AudioSource[2];
-    }
-    public void Play()
-    {
-        
+        // Find all AudioSource components in the scene.
+        AudioSource[] allAudioSources = GameObject.FindObjectsOfType<AudioSource>();
+
+        // Filter out the disabled AudioSources.
+        enabledAudioSources = new AudioSource[allAudioSources.Length];
+        int enabledAudioSourceIndex = 0;
+        foreach (AudioSource audioSource in allAudioSources)
+        {
+            if (audioSource.enabled)
+            {
+                enabledAudioSources[enabledAudioSourceIndex] = audioSource;
+                enabledAudioSourceIndex++;
+            }
+        }
     }
 }

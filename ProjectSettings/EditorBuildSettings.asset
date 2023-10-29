@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 9af7cf431964fe34981bb958d491146a
+  - enabled: 1
+    path: Assets/Scenes/Allmenus.unity
+    guid: 90a7a39427a3d934eb390fe5ae58a220
+  - enabled: 1
     path: Assets/Scenes/ARScene.unity
     guid: 94cfa6b5cbe54bc4c8cde58d47a4ec7c
+  - enabled: 1
+    path: Assets/Scenes/Hijaiyah.unity
+    guid: ca2d07b9381556540b525f8bcd2f07df
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}

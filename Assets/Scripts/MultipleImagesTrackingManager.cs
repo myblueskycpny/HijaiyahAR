@@ -23,7 +23,7 @@ public class MultipleImagesTrackingManager : MonoBehaviour
         
         foreach(GameObject prefab in PrefabsToSpawn)
         {
-            GameObject newARObject = Instantiate(prefab, Vector3.zero, Quaternion.identity);
+            GameObject newARObject = Instantiate(prefab, Vector3.zero, prefab.transform.rotation);
             newARObject.name = prefab.name;
             newARObject.gameObject.SetActive(false);
             _arObjects.Add(newARObject.name, newARObject);
